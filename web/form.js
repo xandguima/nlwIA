@@ -1,4 +1,8 @@
-import {server} from "./server.js"
+import axios from "axios"
+
+const server= axios.create({
+  baseURL: "http://localhost:3333",
+})
 
 const form=document.getElementById("form")
 const input = document.getElementById("url")
