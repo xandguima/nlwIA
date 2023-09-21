@@ -6,6 +6,11 @@ export const download = (videoId)=> new Promise((resolve,reject)=>{
   const videoURL= "http://www.youtube.com/shorts/"+ videoId
   console.log("realizando o download: "+ videoId) 
 
+  // Check if tmp dir exists, if not create it
+  if(!fs.existsSync("./tmp")){
+    fs.mkdirSync("./tmp")
+  }
+
   ytdl(videoURL, {quality:"lowestaudio",filter:"audioonly"})
   .on("info", (info)=>{
     const seconds= info.formats[0].approxDurationMs/1000
