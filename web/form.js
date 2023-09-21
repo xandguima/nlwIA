@@ -26,6 +26,10 @@ form.addEventListener("submit", async (event)=>{
 
   const summary= await server.post("/summary",{
     text: transcription.data.result,
+  }, {
+    headers: {
+      "Content-Type": "application/json"
+    }
   })
   
 
