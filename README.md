@@ -18,7 +18,7 @@ Projeto exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologi
 <br>
 
 <p align="center">
-  <img alt="projeto myHabits" src=".github/preview.jpg" width="100%">
+  <img alt="projeto myHabits" src=".github/Cover.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
